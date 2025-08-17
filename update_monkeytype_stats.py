@@ -12,10 +12,12 @@ def fetch_stats():
         r = requests.get(API_URL, timeout=10)
         r.raise_for_status()
         data = r.json()
-        # Extract some key stats
-        wpm = data["data"]["personalBests"]["time"]["15"]["wpm"]  # Example: 15s test WPM
-        acc = data["data"]["personalBests"]["time"]["15"]["acc"]
-        consistency = data["data"]["personalBests"]["time"]["15"]["consistency"]
+        
+        # Extract all-time averages
+        stats = data["data"]["typingStats"]["allTime"]
+        wpm = round(stats["wpm"], 2)
+        acc = round(stats["acc"], 2)
+        consistency = round(stats["consistency"], 2)
         return wpm, acc, consistency
     except Exception as e:
         print("Error fetching stats:", e)
