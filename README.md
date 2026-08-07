@@ -4,7 +4,7 @@
 
 💻 Aspiring Frontend Developer
 
-🌱 Currently learning Django, Python and modern web development
+🌱 Currently learning PERN and modern web development
 
 🚀 Looking for Web Development and Software Engineering Internship opportunities
 
