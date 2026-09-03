@@ -10,7 +10,7 @@
 
 ## Tech Stack
 <p align="center">
-    <img src="https://skillicons.dev/icons?i=html,css,js,react,python,django" />
+    <img src="https://skillicons.dev/icons?i=html,css,bootstrap,js,react,python,django" />
 </p>
 
 ---
